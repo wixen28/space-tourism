@@ -1,0 +1,168 @@
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+.navbar {
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    top: 2rem;
+    display: flex;
+    padding: 2rem 0 2rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    font-family: "Barlow", sans-serif;
+    color: #e5e5e5;
+}
+
+
+hr {
+    margin-left: 4rem;
+    margin-right: -12rem;
+    display: inline-block;
+    border: 0;
+    border-top: 1px solid rgb(84, 82, 82);
+    width: 500px;
+    height: 2px;
+    z-index: 999;
+}
+
+.desktop-menu {
+    min-width: 800px;
+    background-color: rgba(90,90,90, 0.2);
+    backdrop-filter: blur(6px);
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.desktop-item {
+    border:1px solid transparent;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    /* width: 200px; */
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    padding: 30px 0px 30px 00px;
+    color: white;
+    text-decoration: none;
+}
+
+.desktop-item:hover {
+    border-bottom: 2px solid #e5e5e5; 
+}
+
+.menu-number {
+    font-weight: bold;
+}
+
+.hamburger {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+
+@media screen and (min-width: 767px) and (max-width: 1025px) {
+    .navbar {
+        top: 0;
+    }
+
+    .hamburger {
+        display: none;
+    }
+    hr {
+        display: none;
+    }
+    .desktop-menu {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 1rem;
+        min-width: 600px;
+    };
+
+    .desktop-item {
+        letter-spacing: 2px;
+        border:1px solid transparent;
+        padding: 30px 0px 30px 0px;
+        /* padding: 20px 0px 30px 20px; */
+    }
+
+    .desktop-item:hover {
+        border-bottom: 2px solid #e5e5e5; 
+    }
+    
+
+    .menu-number {
+        display: none;
+    }
+    
+    
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .navbar {
+        width: 90%;
+        justify-content: space-between;
+        top: 1rem;
+        padding: 1rem;
+    }
+
+    .logo {
+        width: 2.5rem;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        z-index: 99;
+        width: 1.8rem;
+    }
+
+
+    .desktop-menu {
+        display: none;
+    }
+    .menu-number {
+        font-weight: bold;
+        font-size: 1.2rem ;
+    }
+
+    .mobile-menu {
+        width: 65%;
+        height: 110vh;
+        margin-top: -8rem;
+        background-color: rgba(90,90,90, 0.2);
+        backdrop-filter: blur(15px);
+        position: fixed;
+        right: 0;
+        padding-top: 8rem;
+        padding-left: 2rem;
+        top: 7rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-item {
+        cursor: pointer;
+        letter-spacing: 2px;
+        padding: 10px 0px 30px 00px;
+        color: white;
+        text-decoration: none;
+    }
+    
+}

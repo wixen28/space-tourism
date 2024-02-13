@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;1,300;1,400;1,500;1,700&family=Bellefair&display=swap');
+
+
+#destination {
+    /* display: flex;
+    flex-direction: column; */
+    justify-content: space-between;
+    padding-top: 3rem;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../design/destinations/background-destination-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    margin: 0 auto;
+}
+
+.dest-span {
+    font-family: 'Barlow Condensed';
+    margin-right: 10px;
+    font-weight: bold;
+    color: grey;
+}
+
+.dest-header {
+    font-family: 'Barlow Condensed';
+    margin-top: 10rem;
+    margin-left: 5rem;
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 5px;
+}
+
+.second-part-destination {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.images {
+    width: 400px; 
+    margin-bottom: 5rem;
+}
+ 
+.planet-info{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.planet-description {
+    margin-top: 4rem;
+}
+
+.planet-description h1 {
+    text-transform: uppercase;
+    font-family: 'Bellefair';
+    font-size: 4.5rem;
+    letter-spacing: 5px;
+    font-weight: 300;
+}
+
+.dest-item {
+    list-style-type: none;
+}
+
+.dest-btn {
+    margin-right: 2rem;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    font-family: 'Barlow Condensed';
+    font: 100;
+    letter-spacing: 1px;
+    color: #cacde0;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 0px 0px 10px 0px;
+    border:1px solid transparent;
+    font-weight: 200;
+}
+
+.dest-btn:hover {
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.dest-btn:first-of-type {
+    margin-left: 52%;
+}
+
+.destination-paragraph {
+    font-family: 'Barlow';
+    color: #D0D6F9;
+    max-width: 400px;
+    line-height: 25px;
+    text-align: start;
+    font-weight: 100;
+}
+
+.dest-hr{ 
+    border-top: 1px solid rgb(59, 55, 55);
+    margin: 2rem 0rem;
+}
+
+.avg-distance {
+    display: flex;
+    gap: 4rem;
+}
+
+.avg {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.avg-para {
+    font: 100;
+    letter-spacing: 1px;
+    font-size: 12px;
+    color: #cacde0;
+    text-transform: uppercase;
+}
+
+.est {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.distance {
+    text-transform: uppercase;
+    font-family: 'Bellefair';
+    font-size: 20px;
+}
+
+.est-para {
+    font: 100;
+    letter-spacing: 1px;
+    font-size: 12px;
+    color: #cacde0;
+    text-transform: uppercase;
+}
+
+
+@media screen and (min-width: 767px) and (max-width: 1025px) {
+    #destination {
+        height: 100vh;
+        background-image: url('../design/destinations/background-destination-tablet.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+
+.dest-btn {
+    position: relative;
+    /* margin: 3rem; */
+    margin-top: 32rem;
+    margin-right: 1rem;
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    font-family: 'Barlow Condensed';
+    font: 100;
+    letter-spacing: 1px;
+    color: #cacde0;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 0px 0px 10px 0px;
+    border:1px solid transparent;
+    font-weight: 200;
+}
+
+.dest-btn:first-of-type {
+
+    margin-left: 35%;
+}
+
+.planet-info{
+    /* position: relative; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    margin-top: -30rem ;
+}
+.images {
+    margin: 0 auto;
+}
+
+.dest-hr{ 
+    border-top: 1px solid white;
+    margin: 0;
+}
+
+.planet-description {
+    margin:0 auto;
+    margin-top: 7rem;
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.destination-paragraph {
+    text-align: center;
+    padding: 1rem;
+}
+
+.avg-distance {
+    border-top: 1px solid grey;
+    padding-top: 20px;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.avg {
+    margin: 0 auto;
+}
+
+.est {
+    margin: 0 auto;
+}
+
+
+}
+
+@media screen and (max-width: 767px) {
+    #destination {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        background-image: url('../design/destinations/background-destination-mobile.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .second-part-destination {
+        width: 100%;
+    }
+
+    .dest-header {
+        margin: 0 auto;
+        margin-top: 7rem;
+        font-size: 1rem;
+    }
+.dest-btn {
+    position: relative;
+    margin-top: 20rem;
+    margin-right: 10px;
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    font-family: 'Barlow Condensed';
+    font: 100;
+    letter-spacing: 1px;
+    color: #cacde0;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 0px 0px 10px 0px;
+    border:1px solid transparent;
+    font-weight: 200;
+}
+
+.dest-btn:first-of-type {
+    margin-left: 35%;
+}
+
+.planet-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    margin-top: -20rem ;
+}
+.images {
+    margin: 0 auto;
+    width: 230px;
+}
+.planet-description {
+    margin:0 auto;
+    margin-top: 12rem;
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.planet-description h1 {
+    font-size: 2.5rem;
+}
+
+.destination-paragraph {
+    text-align: center;
+    font-size: 13px;
+    padding: 1rem;
+}
+
+.avg-distance {
+    flex-direction: column;
+    border-top: 1px solid grey;
+    padding-top: 20px;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.avg {
+    margin: 0 auto;
+}
+
+.est {
+    margin: 0 auto;
+}
+
+}
+
+@media screen and (max-width: 550px) {
+
+    .dest-btn:first-of-type {
+        margin-left: 30%;
+    }
+}
+@media screen and (max-width: 380px) {
+    .dest-btn:first-of-type {
+        margin-left: 20%;
+    }
+}

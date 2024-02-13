@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;1,300;1,400;1,500;1,700&family=Bellefair&display=swap');
+
+
+
+#technology {
+    /* display: flex;
+    flex-direction: column; */
+    width: 100%;
+    height: 100vh;
+    padding-top: 3rem;
+    margin: 0 auto;
+    background-image: url('../design/technology/background-technology-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.technology-header {
+    font-family: 'Barlow Condensed';
+    margin-top: 12rem;
+    margin-left: 10rem;
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 5px;
+}
+
+.technology-span {
+    font-family: 'Barlow Condensed';
+    margin-right: 10px;
+    font-weight: bold;
+    color: grey;
+}
+
+.technology-part {
+    display: flex;
+    justify-content: space-between;
+}
+.techno-text-btns {
+    display: flex;
+    align-items: center;
+    margin-left: 10rem;
+    padding-bottom: 4rem;
+}
+
+.techno-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.techno-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #e5e5e5;
+    background-color: transparent;
+    color: #fff;
+}
+
+.techno-btn:hover {
+    background-color: #fff;
+    color: black;
+}
+
+.techno-text {
+    margin-left: 3rem;
+}
+.the-techno {
+    width: 400px;
+    color: #D0D6F9;
+    font-family: 'Barlow';
+    word-spacing: 7px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.techno-header {
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 2px;
+    font-size: 3rem;
+    margin-top: 0.5rem;
+}
+.techno-para {
+    width: 400px;
+    color: #D0D6F9;
+    font-family: 'Barlow';
+    margin-top: 0.5rem;
+    font-size: 16px;
+}
+
+.techno-img {
+    width: 450px;
+}
+
+.techno-img-landscape {
+    display: none;
+}
+
+
+@media screen and (min-width: 767px) and (max-width: 1025px)  {
+    
+    #technology {
+        background-image: url('../design/technology/background-technology-tablet.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+
+    .technology-header {
+        margin-top: 8rem;
+        margin-left: 4rem;
+     }
+    
+    .technology-part {
+        flex-direction: column;
+    }
+    
+    .techno-text-btns {
+        order: 2;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 3rem;
+        flex-direction: column;
+    }
+
+    .techno-btns {
+        flex-direction: row;
+    }
+
+    .techno-text {
+        margin-left: 0rem;
+        margin-bottom: 2rem;
+    }
+
+    .the-techno {
+        margin-top: 2rem;
+    }
+
+    .techno-data {
+        margin: 0 auto
+    }
+    .techno-img-landscape {
+        order: 1;
+        display: block;
+        margin-top: 5rem;
+        width: 100%;
+    }
+
+    .techno-img {
+        order: 1;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #technology {
+        background-image: url('../design/technology/background-technology-mobile.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 40vh;
+    }
+
+    .technology-header {
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 7rem;
+        font-size: 1rem;
+     }
+    
+    .technology-part {
+        flex-direction: column;
+    }
+    
+    .techno-text-btns {
+        order: 2;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 2rem;
+        flex-direction: column;
+    }
+
+    .techno-btns {
+        flex-direction: row;
+    }
+
+    .techno-text {
+        margin-left: 0rem;
+        margin-bottom: 4rem;
+    }
+
+    .the-techno {
+        margin: 0 auto;
+        width: 200px;
+        margin-top: 2rem;
+    }
+
+    .techno-data {
+        margin: 0 auto
+    }
+    .techno-img-landscape {
+        order: 1;
+        display: block;
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    .techno-img {
+        order: 1;
+        display: none;
+    }
+
+    .techno-header {
+        font-size: 1.8rem;
+    }
+    .techno-para {
+        margin: 0 auto;
+        margin-top: 0.5rem;
+        width: 250px;
+        font-size: 12px;
+    }
+
+    
+}
+
+/* @media screen and (max-width: 407px) {
+ #technology {
+    height: auto;
+ }
+} */
